@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.xm.UsersEntity" table="users" schema="mydb">
+        <id name="userLogin">
+            <column name="user_login" sql-type="int(11)"/>
+        </id>
+        <property name="userFirstname">
+            <column name="user_firstname" sql-type="varchar(128)" length="128"/>
+        </property>
+        <property name="userLastname">
+            <column name="user_lastname" sql-type="varchar(128)" length="128"/>
+        </property>
+    </class>
+</hibernate-mapping>
